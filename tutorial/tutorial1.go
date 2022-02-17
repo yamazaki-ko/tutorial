@@ -167,7 +167,7 @@ func chapter6(i, n, limit float64) { // 型省略
 	}
 
 	// select（選択肢が多い時）
-	num3 := rand.Intn(10)
+	num3 := 2
 	switch num3 {
 	case 1:
 		fmt.Println("値は1です")
@@ -185,11 +185,7 @@ func chapter6(i, n, limit float64) { // 型省略
 
 	// 処理が同じ場合
 	switch num3 {
-	case 1:
-	case 2:
-	case 3:
-	case 4:
-	case 5:
+	case 1, 2, 3, 4, 5:
 		fmt.Println("5以下です")
 	default:
 		fmt.Println("それ以外です")
